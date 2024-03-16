@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizech Inc.</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Wizech Inc.</h1>
+        <p>We provide top-notch IT consultancy services to government and big-name companies. Located in Toronto, Ontario, Canada.</p>
+        <a href="https://jobs.wizech.com" class="button">Explore Open Positions</a>
+    </div>
+
+    <script>
+        // JavaScript for fancy effects
+        document.addEventListener("DOMContentLoaded", function () {
+            // Animate the title
+            const title = document.querySelector('h1');
+            title.style.opacity = '0';
+            title.style.transform = 'translateY(-50px)';
+            setTimeout(() => {
+                title.style.opacity = '1';
+                title.style.transform = 'translateY(0)';
+            }, 500);
+
+            // Animate the button
+            const button = document.querySelector('.button');
+            button.addEventListener('mouseover', function () {
+                button.style.backgroundColor = '#0056b3';
+            });
+            button.addEventListener('mouseout', function () {
+                button.style.backgroundColor = '#007bff';
+            });
+        });
+    </script>
+</body>
+
+</html>
